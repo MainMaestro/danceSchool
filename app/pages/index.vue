@@ -2,6 +2,7 @@
   <div
     class="min-h-screen bg-[url('@/assets/images/carpet.jpg')] bg-cover bg-fixed bg-center bg-no-repeat text-gray-100 font-sans"
   >
+  <Navbar />
     <!-- Hero -->
     <section
       class="relative h-screen flex items-center justify-center bg-cover bg-fixed bg-[url(/home/armen/Документы/danceSchool/app/assets/images/armD1.jpg)]"
@@ -38,7 +39,7 @@
       </div>
     </section>
 
-    <!-- Почему выбирают нас -->
+    <!-- Почему выбирают нас
     <section class="m-10 py-16 bg-gray-800/50 rounded-3xl backdrop-blur-md">
       <div class="container mx-auto text-center">
         <h2 class="text-3xl font-semibold mb-10 text-gray-200">
@@ -71,45 +72,27 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Популярные танцы -->
      <Card />
 
     <!-- Преподаватели -->
-    <section class="m-10 py-16 bg-gray-800/50 rounded-3xl backdrop-blur-md">
+    <section class="m-10 py-16 bg-sky rounded-3xl backdrop-blur-md">
       <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-semibold mb-10 text-gray-200">
+        <h2 class="text-3xl font-semibold mb-10 text-wine">
           Преподаватели
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="w-sm mx-auto grid-cols-1 md:grid-cols-1 gap-6">
           <div
-            class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-4 hover:shadow-2xl hover:scale-105 transition"
+            class="bg-white backdrop-blur-md rounded-xl shadow-lg p-4 hover:shadow-2xl hover:scale-105 transition"
           >
             <img src="../assets/images/Kristina.jpg" class=" w-full  object-cover rounded-xl mb-4" />
-            <h3 class="text-xl font-bold text-gray-100">
+            <h3 class="text-xl font-bold text-wine">
               Аветисян Кристина Акоповна
             </h3>
-            <p class="text-gray-300 text-sm mt-1">
+            <p class="text-wine text-sm mt-1">
               Мастер классических армянских танцев с 15-летним опытом.
-            </p>
-          </div>
-          <div
-            class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-4 hover:shadow-2xl hover:scale-105 transition"
-          >
-            <!-- <img src="/images/teacher2.jpg" class="w-full h-56 object-cover rounded-xl mb-4" /> -->
-            <h3 class="text-xl font-bold text-gray-100">Седа К.</h3>
-            <p class="text-gray-300 text-sm mt-1">
-              Преподаватель детских и взрослых групп, акцент на кочари.
-            </p>
-          </div>
-          <div
-            class="bg-white/10 backdrop-blur-md rounded-xl shadow-lg p-4 hover:shadow-2xl hover:scale-105 transition"
-          >
-            <!-- <img src="/images/teacher3.jpg" class="w-full h-56 object-cover rounded-xl mb-4" /> -->
-            <h3 class="text-xl font-bold text-gray-100">Левон М.</h3>
-            <p class="text-gray-300 text-sm mt-1">
-              Специалист по народным и сценическим постановкам.
             </p>
           </div>
         </div>

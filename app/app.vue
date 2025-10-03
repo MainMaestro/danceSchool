@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen flex flex-col font-sans bg-gray-900">
-    <NavbarMobile />
     <main class="flex-grow">
       
       <NuxtPage />
