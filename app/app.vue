@@ -1,10 +1,12 @@
 <template>
   <div class="min-h-screen flex flex-col font-sans bg-gray-900">
     <main class="flex-grow">
+    <Navbar />
       
       <NuxtPage />
-    </main>
     <Footer />
+
+    </main>
   </div>
 </template>
 
