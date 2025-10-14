@@ -1,12 +1,13 @@
 <template>
-  <bgCard class="m-4 sm:m-10 py-12 sm:py-16 bg-sky rounded-3xl text-wine">
-    <div class="container mx-auto text-center px-4">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-6">О школе</h2>
-      <p class="max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
-        Наша школа сохраняет традиции армянских танцев, обучая всех желающих
-        движениям и ритмам, которые передаются из поколения в поколение.
-        Занятия подходят для детей и взрослых, новичков и опытных танцоров.
-      </p>
-    </div>
+  <bgCard>
+    <template v-slot:title>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-6"></h2>
+    </template>
+    <template v-slot:content>
+        <p class="max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">
+          Добро пожаловать в школу танцев «Солнце Кавказа» — пространство, где
+          раскрывается магия кавказских танцев и звучат ритмы гор!
+        </p>
+    </template>
   </bgCard>
 </template>

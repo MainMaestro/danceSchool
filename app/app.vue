@@ -1,14 +1,15 @@
 <template>
-    <div class="min-h-screen flex flex-col font-sans bg-gray-900">
-        <main class="flex-grow">
+    <div class="bg-[#02040F]">
+        <main class="flex-grow text-[#E5DADA]">
             <Navbar />
             <NuxtPage />
-            <TheFooter />
         </main>
+            <TheFooter />
+
     </div>
 </template>
 
 <script>
-import Navbar from "~/components/Navbar.vue";
-import TheFooter from "~/components/TheFooter.vue";
+import Navbar from "@/components/Navbar.vue";
+import TheFooter from "@/components/TheFooter.vue";
 </script>

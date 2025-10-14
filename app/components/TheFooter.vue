@@ -1,3 +1,19 @@
+
+<template>
+    <footer class="bg-gray-900 text-gray-300 py-6 flex flex-col gap-8">
+        <div class="flex flex-row md:justify-center gap-6 flex-wrap px-4">
+            <div v-for="section in sections">
+                <h3 class="uppercase mb-2 text-lg">{{ section.title }}</h3>
+                <ul class="">
+                    <li v-for="l in section.links">
+                        <a href="">{{ l.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class=" ">© {{ new Date().getFullYear() }} Արմ Տանս. Все права защищены.</p>
+    </footer>
+</template>
 <script setup>
 const sections = [
     {
@@ -22,18 +38,3 @@ const sections = [
     },
 ];
 </script>
-<template>
-    <footer class="bg-gray-900 text-gray-300 py-6 flex flex-col gap-8">
-        <div class="flex flex-row md:justify-center gap-6 flex-wrap px-4">
-            <div v-for="section in sections">
-                <h3 class="uppercase mb-2 text-lg">{{ section.title }}</h3>
-                <ul class="">
-                    <li v-for="l in section.links">
-                        <a href="">{{ l.name }}</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <p class="text-center">© {{ new Date().getFullYear() }} Արմ Տանս. Все права защищены.</p>
-    </footer>
-</template>

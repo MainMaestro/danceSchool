@@ -8,7 +8,7 @@
       <transition name="modal-content" appear>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl w-11/12 md:w-2/3 lg:w-1/2  overflow-y-hidden">
           <slot />
-          <div class="mt-4 text-center">
+          <div class="mt-4  ">
             <Button
               @click="close"
               class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 cursor-pointer "

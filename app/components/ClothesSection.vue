@@ -1,13 +1,19 @@
 <template>
   <bgCard>
-    <div class="container mx-auto px-4">
-      <h2 class="text-2xl sm:text-3xl font-semibold mb-6">Требования к одежде</h2>
+    <template v-slot:title>
+      <h2 class="text-2xl sm:text-3xl font-semibold mb-6">
+        Требования к одежде
+      </h2>
+    </template>
 
-      <div class="flex flex-col sm:flex-row justify-center gap-8 text-base sm:text-lg">
+    <template v-slot:content>
+      <div
+        class="flex flex-col sm:flex-row justify-center gap-8 text-base sm:text-lg"
+      >
         <div
           v-for="clothe in clothes"
           :key="clothe.name"
-          class="text-left sm:w-1/2"
+          class="text-left pl-2 sm:w-1/2"
         >
           <h3 class="font-bold mb-2">{{ clothe.name }}</h3>
           <ul>
@@ -16,13 +22,13 @@
               :key="item"
               class="flex items-center my-1"
             >
-              <CheckCircleIcon class="flex-shrink-0  w-5 mr-2  text-wine" />
+              <CheckCircleIcon class="flex-shrink-0 w-5 mr-2 fill-[#E59500]" />
               <p>{{ item }}</p>
             </li>
           </ul>
         </div>
       </div>
-    </div>
+    </template>
   </bgCard>
 </template>
 

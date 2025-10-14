@@ -4,3 +4,12 @@
     --color-wine: #7b3b4b;
     --color-sky: #A8BBBF;
 }
+
+p{
+    @apply text-[#E5DADA]/80 
+    
+}
+
+h1,h2{
+    @apply text-[#E59500]
+}

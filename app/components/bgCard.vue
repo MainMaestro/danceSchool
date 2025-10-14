@@ -1,19 +1,26 @@
 <template>
-  <section class="relative overflow-hidden m-4 sm:m-10 py-12 sm:py-16 bg-sky text-center rounded-3xl  text-wine">
-    <img
-      src="../assets/images/Ornam.svg"
-      class="absolute w-24 sm:w-32 md:w-40 top-0 left-0  z-10"
-      alt="Орнамент"
-    />
-
-    <div class="relative z-20">
-      <slot></slot>
+  <section
+    class="relative flex-col overflow-hidden  text-center rounded-sm flex items-center justify-between bg-[#001f2d]"
+  >
+    <div class="flex flex-row justify-between w-full items-center">
+      <img :src="Ornament" class="w-24 sm:w-32 md:w-40" alt="Орнамент" />
+      <div><slot name="title"></slot></div>
+      <div class="w-24 sm:w-32 md:w-40"></div>
     </div>
 
-    <img
-      src="../assets/images/Ornam.svg"
-      class="rotate-180 absolute w-24 sm:w-32 md:w-40 bottom-0 right-0  z-10"
-      alt="Орнамент"
-    />
+    <div class="relative z-20">
+      <slot name="content"></slot>
+    </div>
+    <div class="flex flex-row justify-end w-full">
+      <img
+        :src="Ornament"
+        class="rotate-180 w-24 sm:w-32 md:w-40"
+        alt="Орнамент"
+      />
+    </div>
   </section>
 </template>
+
+<script setup>
+import Ornament from "../assets/images/Ornam.svg";
+</script>

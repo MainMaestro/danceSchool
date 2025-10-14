@@ -1,16 +1,20 @@
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 bg-sky  shadow-md text-wine">
-    <nav class=" flex justify-between items-center px-4 py-3 ">
+  <header class="sticky top-0 w-full z-50  bg-[#02040f] shadow-md ">
+    <nav class="flex justify-between items-center px-4 py-3">
       <!-- Логотип -->
-      <NuxtLink to="/" class="text-2xl font-bold hover:text-wine/70 transition">
+      <NuxtLink
+        to="/"
+        class="neon-text text-2xl font-bold hover: /70 transition"
+      >
         Солнце Кавказа
       </NuxtLink>
 
       <!-- Десктопное меню -->
       <div class="space-x-6 hidden md:flex font-semibold">
-        <NuxtLink to="/about" class="hover:text-wine/70 transition">О школе</NuxtLink>
-        <NuxtLink to="/contacts" class="hover:text-wine/70 transition">Контакты</NuxtLink>
-        <NuxtLink to="/Gallery" class="hover:text-wine/70 transition">Галерея</NuxtLink>
+        <NuxtLink to="/about" class="hover: /70 transition">О школе</NuxtLink>
+        <NuxtLink to="/#dances" class="hover: /70 transition">О танцах</NuxtLink>
+        <NuxtLink to="/#contacts" class="hover: /70 transition">Контакты</NuxtLink>
+        <NuxtLink to="/Gallery" class="hover: /70 transition">Галерея</NuxtLink>
       </div>
 
       <!-- Кнопка-гамбургер -->
@@ -37,12 +41,12 @@
     <transition name="slide-fade">
       <div
         v-if="isOpen"
-        class="absolute top-full left-0 right-0 bg-sky/95 text-wine font-semibold shadow-lg"
+        class="absolute top-full left-0 right-0 bg-[#02040f]/95   font-semibold shadow-lg"
       >
         <div class="flex flex-col items-center space-y-4 py-6 animate-fadeIn">
-          <NuxtLink to="/about" class="hover:text-wine/70 transition" @click="closeMenu">О школе</NuxtLink>
-          <NuxtLink to="/contacts" class="hover:text-wine/70 transition" @click="closeMenu">Контакты</NuxtLink>
-          <NuxtLink to="/Gallery" class="hover:text-wine/70 transition" @click="closeMenu">Галерея</NuxtLink>
+          <NuxtLink to="/about" class="hover: /70 transition" @click="closeMenu">О школе</NuxtLink>
+          <NuxtLink to="/contacts" class="hover: /70 transition" @click="closeMenu">Контакты</NuxtLink>
+          <NuxtLink to="/Gallery" class="hover: /70 transition" @click="closeMenu">Галерея</NuxtLink>
         </div>
       </div>
     </transition>
@@ -85,5 +89,39 @@ const closeMenu = () => (isOpen.value = false)
 }
 .animate-fadeIn {
   animation: fadeIn 0.4s ease;
+}
+
+/* 💡 Эффект филаментовой лампы (неоновое свечение) */
+.neon-text {
+  color: #ffd6a3;
+  text-shadow:
+    0 0 3px #ffbb6e,
+    0 0 7px #ffbb6e,
+    0 0 10px #ff9900,
+    0 0 20px #ff7700,
+    0 0 30px #ff5500;
+  animation: filament-flicker 3s infinite ease-in-out;
+}
+
+/* Мягкая пульсация яркости */
+@keyframes filament-flicker {
+  0%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 3px #ffbb6e,
+      0 0 7px #ffbb6e,
+      0 0 10px #ff9900,
+      0 0 20px #ff7700,
+      0 0 30px #ff5500;
+  }
+  50% {
+    opacity: 0.85;
+    text-shadow:
+      0 0 2px #ffbb6e,
+      0 0 4px #ffbb6e,
+      0 0 7px #ff8800,
+      0 0 14px #ff6600,
+      0 0 22px #ff4400;
+  }
 }
 </style>
