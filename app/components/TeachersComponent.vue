@@ -1,5 +1,5 @@
 <template>
-  <bgCard class="m-4 sm:m-10 py-12 sm:py-16 bg-sky rounded-3xl backdrop-blur-md text-wine">
+  <bgCard >
     <div class="container mx-auto text-center">
       <h2 class="text-2xl sm:text-3xl font-semibold mb-10">Преподаватели</h2>
 
@@ -24,7 +24,8 @@
       </div>
     </div>
 
-    <Modal :show="modalOpen" @close="modalOpen = false">
+  </bgCard>
+  <Modal :show="modalOpen" @close="modalOpen = false">
       <h2 class="text-2xl font-bold mb-4 text-wine">
         {{ selectedTeacher.name }}
       </h2>
@@ -40,7 +41,6 @@
         />
       </div>
     </Modal>
-  </bgCard>
 </template>
 
 <script setup>

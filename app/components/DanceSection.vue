@@ -1,5 +1,5 @@
 <template>
-  <bgCard class="mx-4 sm:mx-10 py-10 bg-sky/90 rounded-3xl backdrop-blur-md relative overflow-hidden">
+  <bgCard >
     <div class="container mx-auto text-center relative z-10">
       <h1 class="text-2xl sm:text-3xl font-semibold mb-8 sm:mb-10 text-wine">Наши танцы</h1>
 
@@ -8,12 +8,12 @@
 
         <!-- горизонтальная прокрутка на маленьких экранах -->
         <div
-          class="flex sm:grid sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible px-2 sm:px-0 scrollbar-hide"
+          class="flex sm:grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 overflow-x-auto sm:overflow-visible px-2 sm:px-0 mx-5 scrollbar-hide"
         >
           <div
             v-for="item in dance.items"
             :key="item.name"
-            class="min-w-[70%] sm:min-w-0 bg-wine backdrop-blur-md rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition overflow-hidden"
+            class="min-w-[80%] sm:min-w-0 bg-wine  rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition overflow-hidden"
           >
             <img :src="item.image" class="w-full h-48 sm:h-56 object-cover" />
             <h3 class="text-xl sm:text-3xl font-bold text-white p-4">

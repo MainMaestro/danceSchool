@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative h-[90vh] flex items-center justify-center bg-cover bg-fixed bg-[url(/assets/images/armD1.jpg)]"
+    class="relative h-screen flex items-center justify-center bg-cover bg-fixed bg-[url(/assets/images/armD1.jpg)]"
   >
     <div class="absolute inset-0 bg-black/70 flex items-center justify-center">
       <div class="text-center px-6">

@@ -1,5 +1,5 @@
 <template>
-  <section class="m-4 sm:m-10 py-12 sm:py-16 bg-sky text-center rounded-3xl backdrop-blur-md text-wine">
+  <bgCard>
     <div class="container mx-auto px-4">
       <h2 class="text-2xl sm:text-3xl font-semibold mb-6">Требования к одежде</h2>
 
@@ -14,16 +14,16 @@
             <li
               v-for="item in clothe.clothes"
               :key="item"
-              class="flex items-start my-1"
+              class="flex items-center my-1"
             >
-              <CheckCircleIcon class="w-5 mr-2 text-wine" />
+              <CheckCircleIcon class="flex-shrink-0  w-5 mr-2  text-wine" />
               <p>{{ item }}</p>
             </li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
+  </bgCard>
 </template>
 
 <script setup>

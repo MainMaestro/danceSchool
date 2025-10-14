@@ -1,5 +1,5 @@
 <template>
-  <bgCard class="m-4 sm:m-10 py-12 sm:py-16 bg-sky rounded-3xl backdrop-blur-md text-wine">
+  <bgCard class="m-4 sm:m-10 py-12 sm:py-16 bg-sky rounded-3xl text-wine">
     <div class="container mx-auto text-center px-4">
       <h2 class="text-2xl sm:text-3xl font-semibold mb-6">О школе</h2>
       <p class="max-w-3xl mx-auto text-sm sm:text-base leading-relaxed">

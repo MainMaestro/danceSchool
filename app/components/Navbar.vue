@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed left-0 right-0 top-0 z-50 bg-sky/90 backdrop-blur-md shadow-md text-wine">
+  <header class="fixed left-0 right-0 top-0 z-50 bg-sky  shadow-md text-wine">
     <nav class=" flex justify-between items-center px-4 py-3 ">
       <!-- Логотип -->
       <NuxtLink to="/" class="text-2xl font-bold hover:text-wine/70 transition">
@@ -37,7 +37,7 @@
     <transition name="slide-fade">
       <div
         v-if="isOpen"
-        class="absolute top-full left-0 right-0 bg-sky/95 backdrop-blur-md text-wine font-semibold shadow-lg"
+        class="absolute top-full left-0 right-0 bg-sky/95 text-wine font-semibold shadow-lg"
       >
         <div class="flex flex-col items-center space-y-4 py-6 animate-fadeIn">
           <NuxtLink to="/about" class="hover:text-wine/70 transition" @click="closeMenu">О школе</NuxtLink>
